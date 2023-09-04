@@ -1,14 +1,14 @@
-import { IsEmail, IsString, Length } from "class-validator"
+// import { IsEmail, IsString, Length } from "class-validator"
 
-export class CreateUser{
-    @IsString()
-    username:string
-    @IsString()
-password:string
+// export class CreateUser{
+//     @IsString()
+//     username:string
+//     @IsString()
+// password:string
 
-    description:string
-    @IsEmail()
-    email:string
-    @IsString()
-    country:string
-}
+//     description:string
+//     @IsEmail()
+//     email:string
+//     @IsString()
+//     country:string
+// }

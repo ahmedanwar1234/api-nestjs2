@@ -1,5 +1,4 @@
 import { BadRequestException, Body, Controller,Delete,Get, HttpCode, HttpStatus, NotFoundException, Param, ParseUUIDPipe, Patch, Post, Query, UsePipes, ValidationPipe,UseGuards } from "@nestjs/common";
-import { CreateUser } from "./dtos/create-user.dto";
 // import { UpdateUserDot } from "./dtos/update-user.dto";
 import { UserEntity } from "./user.entity";
 import { ClassCustomValidationPipe } from "./pipes/validation.pipe";

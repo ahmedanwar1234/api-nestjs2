@@ -1,5 +1,4 @@
 import { Injectable,UnauthorizedException } from '@nestjs/common';
-import { CreateUser } from 'src/users/dtos/create-user.dto';
 import { UserService } from 'src/users/user.service';
 
 import { JwtService } from '@nestjs/jwt';
@@ -31,7 +30,7 @@ return{access_token:await this.jwtService.signAsync(payload)}
 
 
 
-signup(data:CreateUser){
+signup(data){
 const user=this.usersService.createUser(data)
 
 return user

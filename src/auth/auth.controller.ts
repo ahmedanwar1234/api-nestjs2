@@ -1,6 +1,5 @@
 import { Body, Controller, Get, HttpCode, HttpStatus, Post, Request, UseGuards } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { CreateUser } from 'src/users/dtos/create-user.dto';
 import { AuthGuard } from './auth.guard';
 import { Public } from './decerators/public.decorator';
 
@@ -16,7 +15,7 @@ signIn(@Body() signInDto){
 }
 
 @Post('signup')
-signup(@Body() data:CreateUser){
+signup(@Body() data){
     const user=this.authService.signup(data)
 
 return user
